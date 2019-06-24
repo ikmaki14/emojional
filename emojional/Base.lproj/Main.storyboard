@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,82 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laughing_face" translatesAutoresizingMaskIntoConstraints="NO" id="W2q-hC-7gT">
+                                <rect key="frame" x="219" y="190" width="134" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expressionless_face" translatesAutoresizingMaskIntoConstraints="NO" id="Tec-KF-5yN">
+                                <rect key="frame" x="57" y="342" width="134" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crying_face" translatesAutoresizingMaskIntoConstraints="NO" id="JQY-Th-6qF">
+                                <rect key="frame" x="219" y="342" width="134" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crazy_face" translatesAutoresizingMaskIntoConstraints="NO" id="bnE-PB-0lN">
+                                <rect key="frame" x="57" y="489" width="134" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cool_face" translatesAutoresizingMaskIntoConstraints="NO" id="1ot-Ln-GDx">
+                                <rect key="frame" x="219" y="489" width="134" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poop" translatesAutoresizingMaskIntoConstraints="NO" id="G7F-Ik-Bg3">
+                                <rect key="frame" x="219" y="630" width="134" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Emojional" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xT-MY-ekS">
+                                <rect key="frame" x="70" y="94" width="274" height="57"/>
+                                <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="49"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_face" translatesAutoresizingMaskIntoConstraints="NO" id="19y-ST-5a8">
+                                <rect key="frame" x="57" y="630" width="134" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_face" translatesAutoresizingMaskIntoConstraints="NO" id="6Vt-vZ-fv4">
+                                <rect key="frame" x="64" y="190" width="121" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3xT-MY-ekS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="PmK-eG-Up4"/>
+                            <constraint firstItem="3xT-MY-ekS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="hWi-oa-n3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3xT-MY-ekS" secondAttribute="trailing" constant="70" id="zad-jp-VXW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="angry_face" destination="19y-ST-5a8" id="c8A-mP-Wef"/>
+                        <outlet property="cool_face" destination="1ot-Ln-GDx" id="ett-oI-p3a"/>
+                        <outlet property="crazy_face" destination="bnE-PB-0lN" id="EBg-09-tc3"/>
+                        <outlet property="crying_face" destination="JQY-Th-6qF" id="Yvf-qm-zrb"/>
+                        <outlet property="expressionless" destination="Tec-KF-5yN" id="qvw-5J-0lo"/>
+                        <outlet property="happy_face" destination="6Vt-vZ-fv4" id="Baq-re-4LW"/>
+                        <outlet property="laughing" destination="W2q-hC-7gT" id="rSi-4i-cf2"/>
+                        <outlet property="poop" destination="G7F-Ik-Bg3" id="Ubh-P0-Fcu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.376811594202906" y="20.089285714285712"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="angry_face" width="296" height="258"/>
+        <image name="cool_face" width="310" height="242"/>
+        <image name="crazy_face" width="314" height="262"/>
+        <image name="crying_face" width="294" height="242"/>
+        <image name="expressionless_face" width="302" height="238"/>
+        <image name="happy_face" width="264" height="248"/>
+        <image name="laughing_face" width="322" height="258"/>
+        <image name="poop" width="334" height="258"/>
+    </resources>
 </document>
